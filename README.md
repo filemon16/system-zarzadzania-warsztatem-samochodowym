@@ -1,3 +1,11 @@
+Zespół: 6
+Grupa lk:2
+Osoby:
+Michał Kozielec
+Maciej Lis
+
+
+
 System Zarządzania Warsztatem Samochodowym
 Opis projektu
 Prosty system zarządzania warsztatem samochodowym napisany w C++ z wykorzystaniem biblioteki Qt. Aplikacja umożliwia zarządzanie klientami, mechanikami, zleceniami, samochodami i częściami.
