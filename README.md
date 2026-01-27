@@ -1,2 +1,2 @@
-# system-zarz-dzania-warsztatem-samochodowym
+# system-zarzadzania-warsztatem-samochodowym
 system zarządzania warsztatem samochodowym
