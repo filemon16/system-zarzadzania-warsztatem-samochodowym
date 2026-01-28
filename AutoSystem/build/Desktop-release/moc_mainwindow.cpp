@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../1-semestr/Projekt_C++_warsztat/AutoSystem/mainwindow.h"
+#include "../../mainwindow.h"
 #include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
@@ -48,9 +48,7 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "onChangeStatusClicked",
         "onGenerateReportClicked",
         "onLoadDataClicked",
-        "onSaveDataClicked",
-        "onAddPartToOrderClicked",
-        "onAddPartClicked"
+        "onSaveDataClicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -70,10 +68,6 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onSaveDataClicked'
         QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onAddPartToOrderClicked'
-        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onAddPartClicked'
-        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -105,8 +99,6 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 5: _t->onGenerateReportClicked(); break;
         case 6: _t->onLoadDataClicked(); break;
         case 7: _t->onSaveDataClicked(); break;
-        case 8: _t->onAddPartToOrderClicked(); break;
-        case 9: _t->onAddPartClicked(); break;
         default: ;
         }
     }
@@ -132,14 +124,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 8;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 10;
+        _id -= 8;
     }
     return _id;
 }
